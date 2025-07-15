@@ -6,7 +6,7 @@ region = "ap-southeast-1"
 resource "aws_instance" "one" {
   ami             = "ami-0e7f9c9fced6cfb10"
   instance_type   = "t2.micro"
-  key_name        = "Harsh"
+  key_name        = "Harsh (2)"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   user_data       = <<EOF
@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami             = "ami-0e7f9c9fced6cfb10"
   instance_type   = "t2.micro"
-  key_name        = "Harsh"
+  key_name        = "Harsh (2)"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   user_data       = <<EOF
@@ -44,7 +44,7 @@ EOF
 resource "aws_instance" "three" {
   ami             = "ami-0e7f9c9fced6cfb10"
   instance_type   = "t2.micro"
-  key_name        = "Harsh"
+  key_name        = "Harsh (2)"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   tags = {
@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami             = "ami-0e7f9c9fced6cfb10"
   instance_type   = "t2.micro"
-  key_name        = "Harsh"
+  key_name        = "Harsh (2)"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   tags = {
